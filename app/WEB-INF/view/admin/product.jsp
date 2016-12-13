@@ -191,7 +191,7 @@
 										<tr ng-repeat="i in items" ng-show="i.ITEM_STATUS!=3"
 											ng-if="i.ITEM_CATEGORY.ID==subFilter || all==true && i.ITEM_CATEGORY.CATEGORY_STATUS==1">
 											<td>{{splitRec(i.ITEM_NAME,0)}}</td>
-											<td>$ {{i.ITEM_PRICE}}</td>
+											<td>{{i.ITEM_PRICE}}</td>
 											<td>{{splitRec(i.ITEM_NAME,1)}}</td>
 											<td>{{i.ITEM_PUBLISH_DATE}}</td>
 											<td style="text-align: center;"><span
@@ -390,7 +390,7 @@
 							</div>
 							<div class="form-group">
 								<label for="proPriceModel">Price</label> <input type="text"
-									ng-required="true" only-digits class="form-control"
+									ng-required="true" class="form-control"
 									id="proPriceModel" ng-model="proPriceModel"
 									placeholder="Price ($)">
 								<p ng-show="proForm.proPriceModel.$error.required">Product

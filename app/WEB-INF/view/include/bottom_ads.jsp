@@ -10,7 +10,7 @@
 					<!-- Item -->
 					<div class="item" ng-repeat="ad in ads | filter:{'STATUS': 1} | orderBy:ORDER"
 					ng-show="ad.ADS_DETAIL.LOCATION=='bottom_small'">
-						<a href="{{ad.LINK}}" target="_news"><img width="{{ad.WIDTH}}" height="{{ad.HEIGHT}}"
+						<a href="{{ad.LINK}}" target="_new"><img width="{{ad.WIDTH}}" height="{{ad.HEIGHT}}"
 							ng-src="{{api_url}}{{ad.IMAGE}}"
 							alt="{{ad.NAME}}"></a>
 					</div>
@@ -50,7 +50,7 @@
 							ng-src="{{api_url}}{{ad.IMAGE}}"
 							alt="{{ad.NAME}}">
 						<div class="mask">
-							<a class="info" href="{{ad.LINK}}">View</a>
+							<a class="info" href="{{ad.LINK}}" target="_new">View</a>
 						</div>
 					</div>
 				<!-- </div> -->

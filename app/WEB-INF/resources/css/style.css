@@ -13050,7 +13050,7 @@ div#fancybox-wrap {
 }
 
 .v_item .label_price:after{
-	content: '$';
+	/*content: '$';*/
 }
 
 .item_status{
